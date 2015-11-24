@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18FECDB21A0B57DC006E3A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FECDB11A0B57DC006E3A78 /* Foundation.framework */; };
+		18FECDB41A0B57DC006E3A78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FECDB31A0B57DC006E3A78 /* CoreGraphics.framework */; };
+		18FECDB61A0B57DC006E3A78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FECDB51A0B57DC006E3A78 /* UIKit.framework */; };
+		18FECDBC1A0B57DC006E3A78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDBA1A0B57DC006E3A78 /* InfoPlist.strings */; };
+		18FECDBE1A0B57DC006E3A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDBD1A0B57DC006E3A78 /* main.m */; };
+		18FECDC21A0B57DC006E3A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDC11A0B57DC006E3A78 /* AppDelegate.m */; };
+		18FECDC41A0B57DC006E3A78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDC31A0B57DC006E3A78 /* Images.xcassets */; };
+		18FECDCB1A0B57DD006E3A78 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FECDCA1A0B57DD006E3A78 /* XCTest.framework */; };
+		18FECDCC1A0B57DD006E3A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FECDB11A0B57DC006E3A78 /* Foundation.framework */; };
+		18FECDCD1A0B57DD006E3A78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FECDB51A0B57DC006E3A78 /* UIKit.framework */; };
+		18FECDD51A0B57DD006E3A78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDD31A0B57DD006E3A78 /* InfoPlist.strings */; };
+		18FECDD71A0B57DD006E3A78 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDD61A0B57DD006E3A78 /* __Tests.m */; };
+		18FECE0C1A0B58AD006E3A78 /* LMJCalendarDateDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDE21A0B58AD006E3A78 /* LMJCalendarDateDayModel.m */; };
+		18FECE0D1A0B58AD006E3A78 /* LMJCalendarDateMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDE41A0B58AD006E3A78 /* LMJCalendarDateMonthModel.m */; };
+		18FECE0E1A0B58AD006E3A78 /* LMJCalendarDateYearModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDE61A0B58AD006E3A78 /* LMJCalendarDateYearModel.m */; };
+		18FECE0F1A0B58AD006E3A78 /* LMJCalendarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDE81A0B58AD006E3A78 /* LMJCalendarItemModel.m */; };
+		18FECE101A0B58AD006E3A78 /* LMJCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECDEB1A0B58AD006E3A78 /* LMJCalendarView.m */; };
+		18FECE111A0B58AD006E3A78 /* bg_calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDED1A0B58AD006E3A78 /* bg_calendar@2x.png */; };
+		18FECE121A0B58AD006E3A78 /* bg_calendar_footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDEE1A0B58AD006E3A78 /* bg_calendar_footer@2x.png */; };
+		18FECE131A0B58AD006E3A78 /* bg_calendar_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDEF1A0B58AD006E3A78 /* bg_calendar_header@2x.png */; };
+		18FECE141A0B58AD006E3A78 /* bg_calendar_week_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF01A0B58AD006E3A78 /* bg_calendar_week_header@2x.png */; };
+		18FECE151A0B58AD006E3A78 /* bg_grid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF11A0B58AD006E3A78 /* bg_grid@2x.png */; };
+		18FECE161A0B58AD006E3A78 /* btn_choose_date_left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF21A0B58AD006E3A78 /* btn_choose_date_left_arrow@2x.png */; };
+		18FECE171A0B58AD006E3A78 /* btn_choose_date_left_arrow_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF31A0B58AD006E3A78 /* btn_choose_date_left_arrow_highlight@2x.png */; };
+		18FECE181A0B58AD006E3A78 /* btn_choose_date_right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF41A0B58AD006E3A78 /* btn_choose_date_right_arrow@2x.png */; };
+		18FECE191A0B58AD006E3A78 /* btn_choose_date_right_arrow_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF51A0B58AD006E3A78 /* btn_choose_date_right_arrow_highlight@2x.png */; };
+		18FECE1A1A0B58AD006E3A78 /* btn_choose_departure_date@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF61A0B58AD006E3A78 /* btn_choose_departure_date@2x.png */; };
+		18FECE1B1A0B58AD006E3A78 /* btn_chose_date@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF71A0B58AD006E3A78 /* btn_chose_date@2x.png */; };
+		18FECE1C1A0B58AD006E3A78 /* btn_chose_date_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF81A0B58AD006E3A78 /* btn_chose_date_highlight@2x.png */; };
+		18FECE1D1A0B58AD006E3A78 /* btn_close_date@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDF91A0B58AD006E3A78 /* btn_close_date@2x.png */; };
+		18FECE1E1A0B58AD006E3A78 /* btn_close_date_hihglight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDFA1A0B58AD006E3A78 /* btn_close_date_hihglight@2x.png */; };
+		18FECE1F1A0B58AD006E3A78 /* btn_grid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDFB1A0B58AD006E3A78 /* btn_grid@2x.png */; };
+		18FECE201A0B58AD006E3A78 /* btn_grid_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDFC1A0B58AD006E3A78 /* btn_grid_cell@2x.png */; };
+		18FECE211A0B58AD006E3A78 /* btn_grid_cell_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDFD1A0B58AD006E3A78 /* btn_grid_cell_highlight@2x.png */; };
+		18FECE221A0B58AD006E3A78 /* btn_grid_cell_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDFE1A0B58AD006E3A78 /* btn_grid_cell_selected@2x.png */; };
+		18FECE231A0B58AD006E3A78 /* btn_grid_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECDFF1A0B58AD006E3A78 /* btn_grid_highlight@2x.png */; };
+		18FECE241A0B58AD006E3A78 /* btn_grid_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE001A0B58AD006E3A78 /* btn_grid_selected@2x.png */; };
+		18FECE251A0B58AD006E3A78 /* btn_next_month@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE011A0B58AD006E3A78 /* btn_next_month@2x.png */; };
+		18FECE261A0B58AD006E3A78 /* btn_next_month_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE021A0B58AD006E3A78 /* btn_next_month_highlight@2x.png */; };
+		18FECE271A0B58AD006E3A78 /* btn_previous_month@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE031A0B58AD006E3A78 /* btn_previous_month@2x.png */; };
+		18FECE281A0B58AD006E3A78 /* btn_previous_month_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE041A0B58AD006E3A78 /* btn_previous_month_highlight@2x.png */; };
+		18FECE291A0B58AD006E3A78 /* btn_radio_check_box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE051A0B58AD006E3A78 /* btn_radio_check_box@2x.png */; };
+		18FECE2A1A0B58AD006E3A78 /* btn_radio_check_box_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FECE061A0B58AD006E3A78 /* btn_radio_check_box_selected@2x.png */; };
+		18FECE2B1A0B58AD006E3A78 /* LMJCalendarProcessingCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECE091A0B58AD006E3A78 /* LMJCalendarProcessingCenter.m */; };
+		18FECE2C1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECE0B1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.m */; };
+		18FECE2F1A0B58D4006E3A78 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECE2E1A0B58D4006E3A78 /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18FECDCE1A0B57DD006E3A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18FECDA61A0B57DB006E3A78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18FECDAD1A0B57DC006E3A78;
+			remoteInfo = "日历";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18FECDAE1A0B57DC006E3A78 /* 日历.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "日历.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FECDB11A0B57DC006E3A78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18FECDB31A0B57DC006E3A78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18FECDB51A0B57DC006E3A78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18FECDB91A0B57DC006E3A78 /* 日历-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "日历-Info.plist"; sourceTree = "<group>"; };
+		18FECDBB1A0B57DC006E3A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18FECDBD1A0B57DC006E3A78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18FECDBF1A0B57DC006E3A78 /* 日历-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "日历-Prefix.pch"; sourceTree = "<group>"; };
+		18FECDC01A0B57DC006E3A78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18FECDC11A0B57DC006E3A78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18FECDC31A0B57DC006E3A78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18FECDC91A0B57DD006E3A78 /* 日历Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "日历Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FECDCA1A0B57DD006E3A78 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18FECDD21A0B57DD006E3A78 /* 日历Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "日历Tests-Info.plist"; sourceTree = "<group>"; };
+		18FECDD41A0B57DD006E3A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18FECDD61A0B57DD006E3A78 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		18FECDE11A0B58AD006E3A78 /* LMJCalendarDateDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarDateDayModel.h; sourceTree = "<group>"; };
+		18FECDE21A0B58AD006E3A78 /* LMJCalendarDateDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarDateDayModel.m; sourceTree = "<group>"; };
+		18FECDE31A0B58AD006E3A78 /* LMJCalendarDateMonthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarDateMonthModel.h; sourceTree = "<group>"; };
+		18FECDE41A0B58AD006E3A78 /* LMJCalendarDateMonthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarDateMonthModel.m; sourceTree = "<group>"; };
+		18FECDE51A0B58AD006E3A78 /* LMJCalendarDateYearModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarDateYearModel.h; sourceTree = "<group>"; };
+		18FECDE61A0B58AD006E3A78 /* LMJCalendarDateYearModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarDateYearModel.m; sourceTree = "<group>"; };
+		18FECDE71A0B58AD006E3A78 /* LMJCalendarItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarItemModel.h; sourceTree = "<group>"; };
+		18FECDE81A0B58AD006E3A78 /* LMJCalendarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarItemModel.m; sourceTree = "<group>"; };
+		18FECDEA1A0B58AD006E3A78 /* LMJCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarView.h; sourceTree = "<group>"; };
+		18FECDEB1A0B58AD006E3A78 /* LMJCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarView.m; sourceTree = "<group>"; };
+		18FECDED1A0B58AD006E3A78 /* bg_calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_calendar@2x.png"; sourceTree = "<group>"; };
+		18FECDEE1A0B58AD006E3A78 /* bg_calendar_footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_calendar_footer@2x.png"; sourceTree = "<group>"; };
+		18FECDEF1A0B58AD006E3A78 /* bg_calendar_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_calendar_header@2x.png"; sourceTree = "<group>"; };
+		18FECDF01A0B58AD006E3A78 /* bg_calendar_week_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_calendar_week_header@2x.png"; sourceTree = "<group>"; };
+		18FECDF11A0B58AD006E3A78 /* bg_grid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_grid@2x.png"; sourceTree = "<group>"; };
+		18FECDF21A0B58AD006E3A78 /* btn_choose_date_left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_choose_date_left_arrow@2x.png"; sourceTree = "<group>"; };
+		18FECDF31A0B58AD006E3A78 /* btn_choose_date_left_arrow_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_choose_date_left_arrow_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECDF41A0B58AD006E3A78 /* btn_choose_date_right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_choose_date_right_arrow@2x.png"; sourceTree = "<group>"; };
+		18FECDF51A0B58AD006E3A78 /* btn_choose_date_right_arrow_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_choose_date_right_arrow_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECDF61A0B58AD006E3A78 /* btn_choose_departure_date@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_choose_departure_date@2x.png"; sourceTree = "<group>"; };
+		18FECDF71A0B58AD006E3A78 /* btn_chose_date@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_chose_date@2x.png"; sourceTree = "<group>"; };
+		18FECDF81A0B58AD006E3A78 /* btn_chose_date_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_chose_date_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECDF91A0B58AD006E3A78 /* btn_close_date@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_date@2x.png"; sourceTree = "<group>"; };
+		18FECDFA1A0B58AD006E3A78 /* btn_close_date_hihglight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_date_hihglight@2x.png"; sourceTree = "<group>"; };
+		18FECDFB1A0B58AD006E3A78 /* btn_grid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_grid@2x.png"; sourceTree = "<group>"; };
+		18FECDFC1A0B58AD006E3A78 /* btn_grid_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_grid_cell@2x.png"; sourceTree = "<group>"; };
+		18FECDFD1A0B58AD006E3A78 /* btn_grid_cell_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_grid_cell_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECDFE1A0B58AD006E3A78 /* btn_grid_cell_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_grid_cell_selected@2x.png"; sourceTree = "<group>"; };
+		18FECDFF1A0B58AD006E3A78 /* btn_grid_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_grid_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECE001A0B58AD006E3A78 /* btn_grid_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_grid_selected@2x.png"; sourceTree = "<group>"; };
+		18FECE011A0B58AD006E3A78 /* btn_next_month@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_next_month@2x.png"; sourceTree = "<group>"; };
+		18FECE021A0B58AD006E3A78 /* btn_next_month_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_next_month_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECE031A0B58AD006E3A78 /* btn_previous_month@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_previous_month@2x.png"; sourceTree = "<group>"; };
+		18FECE041A0B58AD006E3A78 /* btn_previous_month_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_previous_month_highlight@2x.png"; sourceTree = "<group>"; };
+		18FECE051A0B58AD006E3A78 /* btn_radio_check_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_radio_check_box@2x.png"; sourceTree = "<group>"; };
+		18FECE061A0B58AD006E3A78 /* btn_radio_check_box_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_radio_check_box_selected@2x.png"; sourceTree = "<group>"; };
+		18FECE081A0B58AD006E3A78 /* LMJCalendarProcessingCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarProcessingCenter.h; sourceTree = "<group>"; };
+		18FECE091A0B58AD006E3A78 /* LMJCalendarProcessingCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarProcessingCenter.m; sourceTree = "<group>"; };
+		18FECE0A1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJCalendarShowCellGenerator.h; sourceTree = "<group>"; };
+		18FECE0B1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJCalendarShowCellGenerator.m; sourceTree = "<group>"; };
+		18FECE2D1A0B58D4006E3A78 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		18FECE2E1A0B58D4006E3A78 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18FECDAB1A0B57DC006E3A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FECDB41A0B57DC006E3A78 /* CoreGraphics.framework in Frameworks */,
+				18FECDB61A0B57DC006E3A78 /* UIKit.framework in Frameworks */,
+				18FECDB21A0B57DC006E3A78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FECDC61A0B57DD006E3A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FECDCB1A0B57DD006E3A78 /* XCTest.framework in Frameworks */,
+				18FECDCD1A0B57DD006E3A78 /* UIKit.framework in Frameworks */,
+				18FECDCC1A0B57DD006E3A78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FECDA51A0B57DB006E3A78 = {
+			isa = PBXGroup;
+			children = (
+				18FECDE91A0B58AD006E3A78 /* LMJCalendar */,
+				18FECE071A0B58AD006E3A78 /* LMJCalendarCenters */,
+				18FECDE01A0B58AD006E3A78 /* LMJCalendarModels */,
+				18FECDEC1A0B58AD006E3A78 /* Images */,
+				18FECDB71A0B57DC006E3A78 /* 日历 */,
+				18FECDD01A0B57DD006E3A78 /* 日历Tests */,
+				18FECDB01A0B57DC006E3A78 /* Frameworks */,
+				18FECDAF1A0B57DC006E3A78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18FECDAF1A0B57DC006E3A78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDAE1A0B57DC006E3A78 /* 日历.app */,
+				18FECDC91A0B57DD006E3A78 /* 日历Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18FECDB01A0B57DC006E3A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDB11A0B57DC006E3A78 /* Foundation.framework */,
+				18FECDB31A0B57DC006E3A78 /* CoreGraphics.framework */,
+				18FECDB51A0B57DC006E3A78 /* UIKit.framework */,
+				18FECDCA1A0B57DD006E3A78 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18FECDB71A0B57DC006E3A78 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDC01A0B57DC006E3A78 /* AppDelegate.h */,
+				18FECDC11A0B57DC006E3A78 /* AppDelegate.m */,
+				18FECE2D1A0B58D4006E3A78 /* RootViewController.h */,
+				18FECE2E1A0B58D4006E3A78 /* RootViewController.m */,
+				18FECDC31A0B57DC006E3A78 /* Images.xcassets */,
+				18FECDB81A0B57DC006E3A78 /* Supporting Files */,
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
+		18FECDB81A0B57DC006E3A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDB91A0B57DC006E3A78 /* 日历-Info.plist */,
+				18FECDBA1A0B57DC006E3A78 /* InfoPlist.strings */,
+				18FECDBD1A0B57DC006E3A78 /* main.m */,
+				18FECDBF1A0B57DC006E3A78 /* 日历-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18FECDD01A0B57DD006E3A78 /* 日历Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDD61A0B57DD006E3A78 /* __Tests.m */,
+				18FECDD11A0B57DD006E3A78 /* Supporting Files */,
+			);
+			path = "日历Tests";
+			sourceTree = "<group>";
+		};
+		18FECDD11A0B57DD006E3A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDD21A0B57DD006E3A78 /* 日历Tests-Info.plist */,
+				18FECDD31A0B57DD006E3A78 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18FECDE01A0B58AD006E3A78 /* LMJCalendarModels */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDE51A0B58AD006E3A78 /* LMJCalendarDateYearModel.h */,
+				18FECDE61A0B58AD006E3A78 /* LMJCalendarDateYearModel.m */,
+				18FECDE31A0B58AD006E3A78 /* LMJCalendarDateMonthModel.h */,
+				18FECDE41A0B58AD006E3A78 /* LMJCalendarDateMonthModel.m */,
+				18FECDE11A0B58AD006E3A78 /* LMJCalendarDateDayModel.h */,
+				18FECDE21A0B58AD006E3A78 /* LMJCalendarDateDayModel.m */,
+				18FECDE71A0B58AD006E3A78 /* LMJCalendarItemModel.h */,
+				18FECDE81A0B58AD006E3A78 /* LMJCalendarItemModel.m */,
+			);
+			path = LMJCalendarModels;
+			sourceTree = "<group>";
+		};
+		18FECDE91A0B58AD006E3A78 /* LMJCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDEA1A0B58AD006E3A78 /* LMJCalendarView.h */,
+				18FECDEB1A0B58AD006E3A78 /* LMJCalendarView.m */,
+			);
+			path = LMJCalendar;
+			sourceTree = "<group>";
+		};
+		18FECDEC1A0B58AD006E3A78 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18FECDED1A0B58AD006E3A78 /* bg_calendar@2x.png */,
+				18FECDEE1A0B58AD006E3A78 /* bg_calendar_footer@2x.png */,
+				18FECDEF1A0B58AD006E3A78 /* bg_calendar_header@2x.png */,
+				18FECDF01A0B58AD006E3A78 /* bg_calendar_week_header@2x.png */,
+				18FECDF11A0B58AD006E3A78 /* bg_grid@2x.png */,
+				18FECDF21A0B58AD006E3A78 /* btn_choose_date_left_arrow@2x.png */,
+				18FECDF31A0B58AD006E3A78 /* btn_choose_date_left_arrow_highlight@2x.png */,
+				18FECDF41A0B58AD006E3A78 /* btn_choose_date_right_arrow@2x.png */,
+				18FECDF51A0B58AD006E3A78 /* btn_choose_date_right_arrow_highlight@2x.png */,
+				18FECDF61A0B58AD006E3A78 /* btn_choose_departure_date@2x.png */,
+				18FECDF71A0B58AD006E3A78 /* btn_chose_date@2x.png */,
+				18FECDF81A0B58AD006E3A78 /* btn_chose_date_highlight@2x.png */,
+				18FECDF91A0B58AD006E3A78 /* btn_close_date@2x.png */,
+				18FECDFA1A0B58AD006E3A78 /* btn_close_date_hihglight@2x.png */,
+				18FECDFB1A0B58AD006E3A78 /* btn_grid@2x.png */,
+				18FECDFC1A0B58AD006E3A78 /* btn_grid_cell@2x.png */,
+				18FECDFD1A0B58AD006E3A78 /* btn_grid_cell_highlight@2x.png */,
+				18FECDFE1A0B58AD006E3A78 /* btn_grid_cell_selected@2x.png */,
+				18FECDFF1A0B58AD006E3A78 /* btn_grid_highlight@2x.png */,
+				18FECE001A0B58AD006E3A78 /* btn_grid_selected@2x.png */,
+				18FECE011A0B58AD006E3A78 /* btn_next_month@2x.png */,
+				18FECE021A0B58AD006E3A78 /* btn_next_month_highlight@2x.png */,
+				18FECE031A0B58AD006E3A78 /* btn_previous_month@2x.png */,
+				18FECE041A0B58AD006E3A78 /* btn_previous_month_highlight@2x.png */,
+				18FECE051A0B58AD006E3A78 /* btn_radio_check_box@2x.png */,
+				18FECE061A0B58AD006E3A78 /* btn_radio_check_box_selected@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		18FECE071A0B58AD006E3A78 /* LMJCalendarCenters */ = {
+			isa = PBXGroup;
+			children = (
+				18FECE081A0B58AD006E3A78 /* LMJCalendarProcessingCenter.h */,
+				18FECE091A0B58AD006E3A78 /* LMJCalendarProcessingCenter.m */,
+				18FECE0A1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.h */,
+				18FECE0B1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.m */,
+			);
+			path = LMJCalendarCenters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18FECDAD1A0B57DC006E3A78 /* 日历 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FECDDA1A0B57DD006E3A78 /* Build configuration list for PBXNativeTarget "日历" */;
+			buildPhases = (
+				18FECDAA1A0B57DC006E3A78 /* Sources */,
+				18FECDAB1A0B57DC006E3A78 /* Frameworks */,
+				18FECDAC1A0B57DC006E3A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "日历";
+			productName = "日历";
+			productReference = 18FECDAE1A0B57DC006E3A78 /* 日历.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18FECDC81A0B57DD006E3A78 /* 日历Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FECDDD1A0B57DD006E3A78 /* Build configuration list for PBXNativeTarget "日历Tests" */;
+			buildPhases = (
+				18FECDC51A0B57DD006E3A78 /* Sources */,
+				18FECDC61A0B57DD006E3A78 /* Frameworks */,
+				18FECDC71A0B57DD006E3A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18FECDCF1A0B57DD006E3A78 /* PBXTargetDependency */,
+			);
+			name = "日历Tests";
+			productName = "日历Tests";
+			productReference = 18FECDC91A0B57DD006E3A78 /* 日历Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18FECDA61A0B57DB006E3A78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = LiMingjie;
+				TargetAttributes = {
+					18FECDC81A0B57DD006E3A78 = {
+						TestTargetID = 18FECDAD1A0B57DC006E3A78;
+					};
+				};
+			};
+			buildConfigurationList = 18FECDA91A0B57DB006E3A78 /* Build configuration list for PBXProject "日历" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18FECDA51A0B57DB006E3A78;
+			productRefGroup = 18FECDAF1A0B57DC006E3A78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18FECDAD1A0B57DC006E3A78 /* 日历 */,
+				18FECDC81A0B57DD006E3A78 /* 日历Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18FECDAC1A0B57DC006E3A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FECDBC1A0B57DC006E3A78 /* InfoPlist.strings in Resources */,
+				18FECE161A0B58AD006E3A78 /* btn_choose_date_left_arrow@2x.png in Resources */,
+				18FECE261A0B58AD006E3A78 /* btn_next_month_highlight@2x.png in Resources */,
+				18FECE271A0B58AD006E3A78 /* btn_previous_month@2x.png in Resources */,
+				18FECE1B1A0B58AD006E3A78 /* btn_chose_date@2x.png in Resources */,
+				18FECE251A0B58AD006E3A78 /* btn_next_month@2x.png in Resources */,
+				18FECE201A0B58AD006E3A78 /* btn_grid_cell@2x.png in Resources */,
+				18FECE1A1A0B58AD006E3A78 /* btn_choose_departure_date@2x.png in Resources */,
+				18FECE211A0B58AD006E3A78 /* btn_grid_cell_highlight@2x.png in Resources */,
+				18FECE1F1A0B58AD006E3A78 /* btn_grid@2x.png in Resources */,
+				18FECE191A0B58AD006E3A78 /* btn_choose_date_right_arrow_highlight@2x.png in Resources */,
+				18FECE241A0B58AD006E3A78 /* btn_grid_selected@2x.png in Resources */,
+				18FECE291A0B58AD006E3A78 /* btn_radio_check_box@2x.png in Resources */,
+				18FECE1C1A0B58AD006E3A78 /* btn_chose_date_highlight@2x.png in Resources */,
+				18FECE131A0B58AD006E3A78 /* bg_calendar_header@2x.png in Resources */,
+				18FECE2A1A0B58AD006E3A78 /* btn_radio_check_box_selected@2x.png in Resources */,
+				18FECE221A0B58AD006E3A78 /* btn_grid_cell_selected@2x.png in Resources */,
+				18FECE1D1A0B58AD006E3A78 /* btn_close_date@2x.png in Resources */,
+				18FECE141A0B58AD006E3A78 /* bg_calendar_week_header@2x.png in Resources */,
+				18FECE1E1A0B58AD006E3A78 /* btn_close_date_hihglight@2x.png in Resources */,
+				18FECE281A0B58AD006E3A78 /* btn_previous_month_highlight@2x.png in Resources */,
+				18FECE151A0B58AD006E3A78 /* bg_grid@2x.png in Resources */,
+				18FECE231A0B58AD006E3A78 /* btn_grid_highlight@2x.png in Resources */,
+				18FECE181A0B58AD006E3A78 /* btn_choose_date_right_arrow@2x.png in Resources */,
+				18FECDC41A0B57DC006E3A78 /* Images.xcassets in Resources */,
+				18FECE121A0B58AD006E3A78 /* bg_calendar_footer@2x.png in Resources */,
+				18FECE111A0B58AD006E3A78 /* bg_calendar@2x.png in Resources */,
+				18FECE171A0B58AD006E3A78 /* btn_choose_date_left_arrow_highlight@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FECDC71A0B57DD006E3A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FECDD51A0B57DD006E3A78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18FECDAA1A0B57DC006E3A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FECE0D1A0B58AD006E3A78 /* LMJCalendarDateMonthModel.m in Sources */,
+				18FECE101A0B58AD006E3A78 /* LMJCalendarView.m in Sources */,
+				18FECDC21A0B57DC006E3A78 /* AppDelegate.m in Sources */,
+				18FECE2B1A0B58AD006E3A78 /* LMJCalendarProcessingCenter.m in Sources */,
+				18FECE2F1A0B58D4006E3A78 /* RootViewController.m in Sources */,
+				18FECE0F1A0B58AD006E3A78 /* LMJCalendarItemModel.m in Sources */,
+				18FECE0C1A0B58AD006E3A78 /* LMJCalendarDateDayModel.m in Sources */,
+				18FECE2C1A0B58AD006E3A78 /* LMJCalendarShowCellGenerator.m in Sources */,
+				18FECDBE1A0B57DC006E3A78 /* main.m in Sources */,
+				18FECE0E1A0B58AD006E3A78 /* LMJCalendarDateYearModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FECDC51A0B57DD006E3A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FECDD71A0B57DD006E3A78 /* __Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18FECDCF1A0B57DD006E3A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18FECDAD1A0B57DC006E3A78 /* 日历 */;
+			targetProxy = 18FECDCE1A0B57DD006E3A78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18FECDBA1A0B57DC006E3A78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FECDBB1A0B57DC006E3A78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18FECDD31A0B57DD006E3A78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FECDD41A0B57DD006E3A78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18FECDD81A0B57DD006E3A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18FECDD91A0B57DD006E3A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18FECDDB1A0B57DD006E3A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "日历/日历-Prefix.pch";
+				INFOPLIST_FILE = "日历/日历-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18FECDDC1A0B57DD006E3A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "日历/日历-Prefix.pch";
+				INFOPLIST_FILE = "日历/日历-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18FECDDE1A0B57DD006E3A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/日历.app/日历";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "日历/日历-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "日历Tests/日历Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18FECDDF1A0B57DD006E3A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/日历.app/日历";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "日历/日历-Prefix.pch";
+				INFOPLIST_FILE = "日历Tests/日历Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18FECDA91A0B57DB006E3A78 /* Build configuration list for PBXProject "日历" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FECDD81A0B57DD006E3A78 /* Debug */,
+				18FECDD91A0B57DD006E3A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FECDDA1A0B57DD006E3A78 /* Build configuration list for PBXNativeTarget "日历" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FECDDB1A0B57DD006E3A78 /* Debug */,
+				18FECDDC1A0B57DD006E3A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18FECDDD1A0B57DD006E3A78 /* Build configuration list for PBXNativeTarget "日历Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FECDDE1A0B57DD006E3A78 /* Debug */,
+				18FECDDF1A0B57DD006E3A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18FECDA61A0B57DB006E3A78 /* Project object */;
+}
